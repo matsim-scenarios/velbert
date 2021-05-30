@@ -1,6 +1,7 @@
 package org.matsim.velbert.analysis;
 
 import org.locationtech.jts.geom.Geometry;
+import org.matsim.api.core.v01.TransportMode;
 import org.matsim.api.core.v01.population.Activity;
 import org.matsim.core.network.NetworkUtils;
 import org.matsim.core.population.PopulationUtils;
@@ -15,6 +16,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
+import java.util.List;
 
 public class ShapeAnalysis {
 
@@ -24,10 +26,14 @@ public class ShapeAnalysis {
     private static final CoordinateTransformation transformation = TransformationFactory.getCoordinateTransformation("EPSG:25832", "EPSG:3857");
     //HashMap content: postal code (plz) as String, counter as Integer
     private static final HashMap<String, Integer> plzMap = new HashMap<String, Integer>();
-    //Printer
+    //List for modal split analysis
+    private static final List<String> modes = List.of(TransportMode.walk, TransportMode.bike, TransportMode.ride, TransportMode.car, TransportMode.pt, TransportMode.airplane);
+
 
     public static void main(String[] args) throws IOException {
+        //Printer
         PrintWriter pWriter = new PrintWriter(new BufferedWriter(new FileWriter("C:\\Users\\anton\\IdeaProjects\\Hausaufgaben\\HA1\\output\\shapeanalysis.csv")));
+
         //Set postal codes (add more if needed!)
         plzMap.put("42553", 0);
         plzMap.put("42555", 0);
