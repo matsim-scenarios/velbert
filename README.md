@@ -10,7 +10,7 @@ This repository provides an open MATSim transport model for Velbert, Germany, ge
 <a rel="TU Berlin" href="https://vsp.berlin/"><img src="https://vsp.berlin/assets/images/vsp-logo.png" width="15%" height="15%"/></a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></a><br/>
 
-The model contains a 10pct sample of the Velbert population; road capacities are accordingly reduced. The scenario is calibrated taking into consideration the modal split and mode-specific trip distance distributions.
+The model contains a 10pct sample of the Velbert population; road capacities are reduced accordingly. The scenario is calibrated taking into consideration the modal split and mode-specific trip distance distributions.
 
 ## Licenses
 
@@ -33,12 +33,12 @@ You can either download the Project as zip File or check it out as a git project
 
 1. Download the [Zip-File](https://github.com/matsim-scenarios/matsim-velbert/archive/refs/heads/master.zip)
 2. Unzip the Zip-File
-3. Follow the instructions in [Building and Running it locally](##Building and Running it locally)
+3. Follow the instructions in **Building and Running it locally**
 
 ### Check out as Git project
 
 1. Check out as Git-Project from Github
-2. Follow the instructions in [Building and Running it locally](##Building and Running it locally)
+2. Follow the instructions in **Building and Running it locally**
 
 ## Building and Running it locally
 
@@ -54,7 +54,7 @@ or on Windows:
 .\mvnw.cmd clean package
 ```
 
-This will download all necessary dependencies (it might take a while the first time it is run) and create a file `matsim-example-project-0.0.1-SNAPSHOT.jar` in the top directory. This jar-file can either be double-clicked to start the MATSim GUI, or executed with Java on the command line:
+This will download all necessary dependencies (it might take a while the first time it is run) and create a file `matsim-velbert-1.1.jar` in the top directory. This jar file can be executed with Java on the command line:
 
 ```sh
 java -jar matsim-velbert-1.1.jar run --config ./scenarios/velbert-v1.1-10pct/matsim-velbert-v1.1-10pct.config.xml
