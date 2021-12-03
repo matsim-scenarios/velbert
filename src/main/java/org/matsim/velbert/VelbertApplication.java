@@ -28,7 +28,7 @@ public class VelbertApplication extends MATSimApplication {
 
         for (long ii = 600; ii <= 97200; ii += 600) {
 
-            for (String act : List.of("business", "educ_higher", "educ_kiga", "educ_other", "educ_primary", "exuc_secondary",
+            for (String act : List.of("business", "educ_higher", "educ_kiga", "educ_other", "educ_primary", "educ_secondary",
                     "educ_tertiary", "errands", "home", "leasure", "shop_daily", "shop_other", "visit", "word")) {
                 config.planCalcScore()
                         .addActivityParams(new PlanCalcScoreConfigGroup.ActivityParams(act + "_" + ii + ".0").setTypicalDuration(ii));
