@@ -25,6 +25,9 @@ MATSim input files are those that are used as input to run MATSim. They often, b
 
 Handling of large files within git is not without problems (git lfs files are not included in the zip download; we have to pay; ...). In consequence, large files, both on the input and on the output side, reside at https://svn.vsp.tu-berlin.de/repos/public-svn/matsim/scenarios/countries/de/velbert/velbert-v1.1-10pct .
 
+## Internal Documentation
+The internal Documentation is in [GoogleDocs](https://docs.google.com/document/d/17NX4lyNNnCtAPFyBEVlX0iG9KQ9eO-0fUQpi7evGFpk/edit)
+
 ## Downloading the Project
 
 You can either download the Project as zip File or check it out as a git project
